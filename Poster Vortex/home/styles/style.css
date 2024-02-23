@@ -7,19 +7,20 @@
   list-style: none;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 2560px;
 }
 
 body {
   box-sizing: border-box;
   background-color: #222831;
-  
+
 }
-button{
+
+button {
   border: none;
   cursor: pointer;
 }
-button:hover{
+
+button:hover {
   color: #00adb5;
 }
 
@@ -38,7 +39,9 @@ button:hover{
   max-width: 960px;
 
 }
-
+.item{
+  font-size: 1;
+}
 .list__header {
   display: flex;
   justify-content: space-between;
@@ -55,6 +58,10 @@ button:hover{
 }
 
 a:hover {
+  color: #00adb5;
+}
+
+a:active {
   color: #00adb5;
 }
 
