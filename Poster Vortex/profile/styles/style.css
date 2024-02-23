@@ -15,7 +15,8 @@ body {
   background-color: #222831;
 
 }
-
+.logo__header{
+}
 button {
   border: none;
   cursor: pointer;
@@ -41,7 +42,8 @@ button:hover {
 
 }
 .item{
-  font-size: 1;
+  width: px;
+  font-size: 18px;
 }
 .list__header {
   display: flex;
@@ -189,8 +191,8 @@ main {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 150px;
-    grid-template-columns: repeat(2, 1fr); /* Display two columns for smaller screens */; /* Further decrease the minmax value for smaller screens */
-    grid-gap: 5px; /* Reduce the grid gap even more for smaller spacing */
+    grid-template-columns: repeat(3, 1fr); /* Display two columns for smaller screens */; /* Further decrease the minmax value for smaller screens */
+    grid-gap: 10px; /* Reduce the grid gap even more for smaller spacing */
     grid-auto-rows: 400px; /* Adjust the height of grid rows for smaller screens */
   }
 }
@@ -272,8 +274,9 @@ main {
 .price {
   font-family: "Anta", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 660px) {
   .header__container {
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items:end;
@@ -298,5 +301,8 @@ main {
 
   .form-control {
     max-width: none;
+  }
+  .logo__header{
+    height: 19px;
   }
 }

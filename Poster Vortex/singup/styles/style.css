@@ -188,8 +188,9 @@ li{
   box-shadow: inset 1px 1px 1px 1px black;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 660px) {
   .header__container {
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items:end;
@@ -214,5 +215,8 @@ li{
 
   .form-control {
     max-width: none;
+  }
+  .logo__header{
+    height: 19px;
   }
 }
