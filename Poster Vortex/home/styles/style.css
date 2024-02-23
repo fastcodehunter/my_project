@@ -427,3 +427,32 @@ h2 {
   opacity: 1;
   visibility: visible;
 } */
+
+@media (max-width: 768px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+  }
+
+  .list__header {
+    width: 100%;
+  }
+
+  .item_nav {
+
+    align-items:end;
+    margin-bottom: 10px;
+  }
+
+  .item {
+    margin-right: 0;
+    font-size: 13px;
+    
+
+  }
+
+  .form-control {
+    max-width: none;
+  }
+}

@@ -181,13 +181,39 @@ main {
   grid-auto-rows: 390px;
   max-width: 100%;
   max-height: 800px;
-  overflow-y: auto; /* Add vertical scrolling */
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+@media (max-width: 768px) {
+  .main__stand {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    grid-template-columns: repeat(2, 1fr); /* Display two columns for smaller screens */; /* Further decrease the minmax value for smaller screens */
+    grid-gap: 5px; /* Reduce the grid gap even more for smaller spacing */
+    grid-auto-rows: 400px; /* Adjust the height of grid rows for smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .container{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: block;
+    justify-content: space-between;
+
+    
+    
+  }
+}
+@media (max-width: 768px) {
+  .img {
+    max-width: 80px;
+    position: relative;
+  }
 }
 .main__stand::-webkit-scrollbar {
   width: 10px;
   border-radius: 5px;
-  
-
 }
 
 
@@ -245,4 +271,32 @@ main {
 
 .price {
   font-family: "Anta", sans-serif;
+}
+@media (max-width: 768px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+  }
+
+  .list__header {
+    width: 100%;
+  }
+
+  .item_nav {
+
+    align-items:end;
+    margin-bottom: 10px;
+  }
+
+  .item {
+    margin-right: 0;
+    font-size: 13px;
+    
+
+  }
+
+  .form-control {
+    max-width: none;
+  }
 }
