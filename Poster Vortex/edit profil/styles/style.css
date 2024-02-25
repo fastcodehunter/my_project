@@ -105,6 +105,7 @@ main {
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .container__profil {
@@ -251,7 +252,7 @@ main {
   border-radius: 4px;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 620px;
+  max-height: 630px;
 
 }
 .edit__profil__container::-webkit-scrollbar {
@@ -312,6 +313,36 @@ main {
   color: #eeeeee;
   font-size: 18px;
 }
-.main__container{
+.field_textarea {
+  padding: 9px;
+  width: 900px;
+  height: 200px;
+  background-color: #222831;
+  border: none;
+  border-radius: 8px;
+  color: #eeeeee;
+  font-size: 18px;
+  resize: none;
+  overflow: auto;
+}
+.container__btns{
+  padding-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+.btn{
   
+
+  margin-top: 20px;
+  border: none;
+  background-color: EEEEEE;
+  padding:10px 20px;
+  border-radius: 10px;
+}
+.btn:active{
+  box-shadow: inset 1px 1px 1px 1px black;
+
+}
+.link__save{
+  color: black;
 }

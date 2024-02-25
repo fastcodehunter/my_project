@@ -45,6 +45,7 @@ button:hover {
 .list__header {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .item_nav {
